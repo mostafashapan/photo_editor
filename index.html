@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js.js" defer></script>
+    <title>Image Editor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="img">
+                <canvas id="canvs"></canvas>
+
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class=" filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" min="0" max="200" value="100" id="saturate">
+                </li>
+                <li>
+                    <label for="Contrast">Contrast</label>
+                    <input type="range" min="0" max="200" value="100" id="Contrast">
+                </li>
+                <li>
+                    <label for="brightness">brightness</label>
+                    <input type="range" min="0" max="200" value="100" id="brightness">
+                </li>
+                <li>
+                    <label for="sepia">sepia</label>
+                    <input type="range" min="0" max="200" value="0" id="sepia">
+                </li>
+                <li>
+                    <label for="grayscale">grayScale</label>
+                    <input type="range" min="0" max="1" value="0" step="0.1" id="grayscale">
+                </li>
+                <li>
+                    <label for="blur">blur</label>
+                    <input type="range" min="0" max="10" value="1" id="blur">
+                </li>
+                <li>
+                    <label for="hue-rotate">hue rotate</label>
+                    <input type="range" min="0" max="350" value="0" id="hue-rotate">
+                </li>
+                <li>
+                    <a download="image" id="download">Download</a>
+                    <span>Reset</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
